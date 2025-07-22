@@ -43,11 +43,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp ENTER       &kp F1       &kp F2      &kp F3        &kp F4        &kp F5                          &kp F6     &kp F7     &kp F8           &kp F9      &kp F10      &kp F12
-&kp LA(LSHIFT)  &kp LA(TAB)  &kp F3      &kp F4        &kp F5        &kp Y                           &kp F11    &kp F12    &kp LC(F1)       &kp LC(F2)  &kp LA(F11)  &kp LA(F2)
-&kp LSHFT       &kp EXCL     &kp AT      &kp HASH      &kp DOLLAR    &kp M                           &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR    &kp RPAR     &kp TILDE
-&kp LCTRL       &kp GRAVE    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp H     &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC    &kp RBRC     &kp PIPE
-                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&kp ENTER       &kp F1     &kp F2      &kp F3        &kp F4        &kp F5                          &kp F6     &kp F7     &kp F8           &kp F9      &kp F10      &kp F12
+&kp LA(LSHIFT)  &kp LA(Z)  &kp LA(C)   &kp LC(Z)     &kp F5        &kp Y                           &kp F11    &kp F12    &kp LC(F1)       &kp LC(F2)  &kp LA(F11)  &kp LA(F2)
+&kp LSHFT       &kp EXCL   &kp AT      &kp HASH      &kp DOLLAR    &kp M                           &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR    &kp RPAR     &kp TILDE
+&kp LCTRL       &kp GRAVE  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp H     &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC    &kp RBRC     &kp PIPE
+                                       &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
