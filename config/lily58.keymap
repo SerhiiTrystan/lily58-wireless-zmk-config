@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        dsdf: dsdf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp S &kp D &kp F>;
+            label = "DSDF";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -43,11 +52,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp ENTER       &kp F1     &kp F2      &kp F3        &kp F4        &kp F5                          &kp F6     &kp F7     &kp F8           &kp F9      &kp F10      &kp F12
-&kp LA(LSHIFT)  &kp LA(Z)  &kp LA(C)   &kp LC(Z)     &kp F5        &kp Y                           &kp F11    &kp F12    &kp LC(F1)       &kp LC(F2)  &kp LA(F11)  &kp LA(F2)
-&kp LSHFT       &kp EXCL   &kp AT      &kp HASH      &kp DOLLAR    &kp M                           &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR    &kp RPAR     &kp TILDE
-&kp LCTRL       &kp GRAVE  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp H     &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC    &kp RBRC     &kp PIPE
-                                       &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&kp ENTER       &kp F1     &kp F2      &kp F3        &kp F4            &kp F5                         &kp F6     &kp F7     &kp F8           &kp F9    &kp F10   &none
+&kp LA(LSHIFT)  &kp LA(Z)  &kp LA(C)   &kp LC(Z)     &kp Z             &kp Y                          &kp F11    &kp F12    &none            &none     &none     &none
+&kp LSHFT       &kp EXCL   &kp LC(S)   &kp LA(N1)    &kp LA(NUMBER_2)  &kp M                          &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&kp LCTRL       &kp GRAVE  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &kp H    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                       &trans        &trans            &trans        &to 2    &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -63,11 +72,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans          &trans          &trans          &kp F1        &kp F2                                         &trans          &trans          &trans        &trans     &kp INSERT     &kp DELETE
-&kp GRAVE  &msc SCRL_UP    &kp N2          &mkp LCLK       &mkp MCLK     &mkp RCLK                                      &kp N6          &kp N7          &kp N8        &kp N9     &kp PAGE_UP    &kp HOME
-&kp LSHFT  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT                                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp PAGE_DOWN  &kp END
-&kp F7     &kp F8          &kp F9          &kp F10         &kp F11       &kp F12          &trans          &kp LEFT_WIN  &kp LEFT_SHIFT  &kp F5          &kp F6        &kp F7     &kp RBKT       &kp BSLH
-                                           &trans          &trans        &kp LCTRL        &kp LEFT_ALT    &trans        &trans          &trans          &trans
+&trans            &kp F1          &kp F2          &kp F3          &kp F4        &kp F5                                   &kp F6          &kp F7          &kp F8          &kp F9        &kp INSERT       &kp BACKSPACE
+&kp GRAVE         &msc SCRL_UP    &kp N2          &mkp LCLK       &mkp MCLK     &mkp RCLK                                &kp INSERT      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp ENTER
+&kp LSHFT         &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT                          &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END
+&kp LEFT_CONTROL  &trans          &trans          &trans          &trans        &trans           &kp LC(C)    &kp LC(V)  &kp LEFT_SHIFT  &kp F5          &kp F6          &kp F7        &kp RBKT         &kp DELETE
+                                                  &kp LEFT_WIN    &kp LEFT_ALT  &none            &kp SPACE    &to 0      &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
