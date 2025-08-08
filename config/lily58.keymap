@@ -36,7 +36,7 @@
 &kp TAB     &kp Q   &kp W   &kp E         &kp R     &kp T                          &kp Y   &kp U      &kp I          &kp O    &kp P     &kp MINUS
 &kp LSHIFT  &kp A   &kp S   &kp D         &kp F     &kp G                          &kp H   &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
 &kp LCTRL   &kp Z   &kp X   &kp C         &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp GRAVE
-                            &kp LEFT_WIN  &kp LALT  &mo 1   &kp SPACE    &kp RET   &to 2   &kp EQUAL  &kp BACKSLASH
+                            &kp LEFT_WIN  &kp LALT  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp EQUAL  &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -76,7 +76,7 @@
 &kp TAB           &none       &none           &mkp LCLK     &mkp MCLK       &mkp RCLK                                &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT  &kp ENTER
 &kp LSHFT         &none       &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none       &kp K_MENU
 &kp LEFT_CONTROL  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3     &kp LC(C)    &kp LC(V)  &none           &none           &none         &none            &none       &kp DELETE
-                                              &kp LEFT_WIN  &kp LEFT_ALT    &bt BT_CLR_ALL   &kp SPACE    &kp ENTER  &to 0           &trans          &none
+                                              &kp LEFT_WIN  &kp LEFT_ALT    &bt BT_CLR_ALL   &kp SPACE    &kp ENTER  &trans          &trans          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
