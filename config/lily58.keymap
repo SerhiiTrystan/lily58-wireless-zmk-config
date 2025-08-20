@@ -51,11 +51,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp ENTER       &kp F1     &kp F2     &kp F3      &kp F4            &kp F5                   &kp LESS_THAN  &kp GREATER_THAN  &none            &none     &none     &none
-&kp LA(LSHIFT)  &kp LA(Z)  &kp LA(C)  &kp LC(Z)   &kp Z             &kp Y                    &none          &none             &none            &none     &none     &none
-&kp LSHFT       &kp EXCL   &kp LC(S)  &kp LA(N1)  &kp LA(NUMBER_2)  &kp M                    &kp CARET      &kp AMPS          &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&kp LCTRL       &kp GRAVE  &none      &none       &none             &none   &kp H    &trans  &trans         &kp MINUS         &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                      &trans      &trans            &trans  &none    &trans  &trans         &trans            &trans
+&kp ENTER       &kp F1            &kp F2     &kp F3      &kp F4            &kp F5                      &kp LESS_THAN  &kp GREATER_THAN  &none            &none     &none     &none
+&kp LA(LSHIFT)  &kp LA(Z)         &kp LA(C)  &kp LC(Z)   &kp Z             &kp Y                       &none          &none             &none            &none     &none     &none
+&kp LSHFT       &kp LC(NUMBER_1)  &kp LC(S)  &kp LA(N1)  &kp LA(NUMBER_2)  &kp M                       &kp CARET      &kp AMPS          &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&kp LCTRL       &kp GRAVE         &none      &none       &kp LA(NUMBER_3)  &kp LA(X)  &kp H    &trans  &trans         &kp MINUS         &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                             &trans      &trans            &trans     &none    &trans  &trans         &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
