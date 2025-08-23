@@ -52,7 +52,7 @@
             display-name = "Lower";
             bindings = <
 &kp ENTER       &kp F1            &kp F2     &kp F3      &kp F4            &kp F5                      &kp LESS_THAN  &kp GREATER_THAN  &none            &none     &none     &none
-&kp LA(LSHIFT)  &kp LA(Z)         &kp LA(C)  &kp LC(Z)   &kp Z             &kp Y                       &none          &none             &none            &none     &none     &none
+&kp LA(LSHIFT)  &kp LA(Z)         &kp LA(C)  &kp LC(Z)   &kp Z             &kp Y                       &none          &kp KP_DOT        &kp KP_COMMA     &none     &none     &none
 &kp LSHFT       &kp LC(NUMBER_1)  &kp LC(S)  &kp LA(N1)  &kp LA(NUMBER_2)  &kp M                       &kp CARET      &kp AMPS          &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
 &kp LCTRL       &kp GRAVE         &none      &kp LA(A)   &kp LA(NUMBER_3)  &kp LA(X)  &kp H    &trans  &trans         &kp MINUS         &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                              &trans      &trans            &trans     &none    &trans  &trans         &trans            &trans
