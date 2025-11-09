@@ -51,11 +51,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp ENTER       &kp F1            &kp F2     &kp F3      &kp F4            &kp F5                      &kp LESS_THAN  &kp GREATER_THAN  &none            &none     &none     &none
-&kp LA(LSHIFT)  &kp LA(Z)         &kp LA(C)  &kp LC(Z)   &kp Z             &kp Y                       &kp TILDE      &kp KP_DOT        &kp KP_COMMA     &kp APOS  &none     &none
-&kp LSHFT       &kp LC(NUMBER_1)  &kp LC(S)  &kp LA(N1)  &kp LA(NUMBER_2)  &kp M                       &kp CARET      &kp AMPS          &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp RIGHT_SHIFT
-&kp LCTRL       &kp GRAVE         &none      &kp LA(A)   &kp LA(NUMBER_3)  &kp LA(X)  &kp H    &trans  &trans         &kp MINUS         &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                             &trans      &trans            &trans     &none    &trans  &trans         &trans            &trans
+&kp ENTER       &kp F1            &kp F2     &kp F3      &kp F4            &kp F5                          &kp LESS_THAN  &kp GREATER_THAN  &kp KP_DIVIDE    &none     &none     &none
+&kp LA(LSHIFT)  &kp LA(Z)         &kp LA(C)  &kp LC(Z)   &kp Z             &kp Y                           &kp TILDE      &kp KP_DOT        &kp KP_COMMA     &kp APOS  &none     &none
+&kp LSHFT       &kp LC(NUMBER_1)  &kp LC(S)  &kp LA(N1)  &kp LA(NUMBER_2)  &kp M                           &kp CARET      &kp AMPS          &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp RIGHT_SHIFT
+&kp LCTRL       &kp GRAVE         &none      &kp LA(A)   &kp LA(NUMBER_3)  &kp LA(X)  &kp H        &trans  &kp KP_MINUS   &kp KP_MINUS      &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+                                             &trans      &trans            &trans     &kp ENTER    &trans  &trans         &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -84,9 +84,9 @@
         total_comm {
             display-name = "Base";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL                         &kp DELETE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
+&none       &none         &none         &none         &none         &none                                  &kp DELETE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
 &kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T                                  &kp Y       &kp U           &kp I           &kp O         &kp P            &kp MINUS
-&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G                                  &kp H       &kp J           &kp K           &kp L         &kp SEMI         &kp SQT
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL                         &kp H       &kp J           &kp K           &kp L         &kp SEMI         &kp SQT
 &kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &kp LBKT     &kp RBKT  &kp N       &kp M           &kp COMMA       &kp DOT       &kp FSLH         &kp GRAVE
                                         &kp LEFT_WIN  &kp LALT      &none           &kp SPACE    &kp RET   &none       &kp EQUAL       &kp BACKSLASH
             >;
