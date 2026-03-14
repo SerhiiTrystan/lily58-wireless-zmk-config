@@ -1,11 +1,10 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-  projects:
+      url-base: https://github.com/zmkfirmware
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main
       import: app/west.yml
   self:
     path: config
