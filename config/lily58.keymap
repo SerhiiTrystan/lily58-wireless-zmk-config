@@ -52,9 +52,9 @@
             display-name = "Lower";
             bindings = <
 &kp ENTER         &kp F1            &kp F2            &kp F3            &kp F4            &kp F5                                 &kp LESS_THAN  &kp GREATER_THAN  &kp KP_DIVIDE    &none     &kp LC(LS(LEFT_BRACKET))  &kp LS(LC(RIGHT_BRACKET))
-&kp LA(LSHIFT)    &kp LA(Z)         &kp LA(C)         &kp LC(Z)         &kp LA(NUMBER_4)  &kp Y                                  &kp TILDE      &kp KP_DOT        &kp KP_COMMA     &kp APOS  &none                     &none
+&kp LA(LSHIFT)    &kp LA(Z)         &kp LA(C)         &kp LC(Z)         &kp LA(R)         &kp Y                                  &kp TILDE      &kp KP_DOT        &kp KP_COMMA     &kp APOS  &none                     &none
 &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)                       &kp CARET      &kp AMPS          &kp KP_MULTIPLY  &kp LPAR  &kp RPAR                  &kp RIGHT_SHIFT
-&kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp LA(A)         &kp LA(NUMBER_3)  &kp LA(X)         &kp H        &trans  &kp KP_MINUS   &kp KP_MINUS      &kp KP_PLUS      &kp LBRC  &kp RBRC                  &kp PIPE
+&kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &kp LA(F6)        &kp LA(X)         &kp H        &trans  &kp KP_MINUS   &kp KP_MINUS      &kp KP_PLUS      &kp LBRC  &kp RBRC                  &kp PIPE
                                                       &trans            &trans            &trans            &kp ENTER    &trans  &trans         &trans            &trans
             >;
 
